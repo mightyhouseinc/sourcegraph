@@ -12,18 +12,17 @@ class Bruh(object):
         print("yay!")
         def more():
             print("a function in a function!!")
-            pass
+
         more()
 
-if 1 == 1:
-    should_show_ifs = False
+should_show_ifs = False
+
+notHereEither = False
 
 # Don't show from whiles / fors
 while False:
-    notHereEither = False
-
-for i in range(0, 0):
-    definitelyNotInHere = False
+    pass
+definitelyNotInHere = False
 
 with 1:
     what = "contained in scope"
@@ -64,7 +63,7 @@ class ClassWithDecorators(object):
 
     @classmethod
     def class_method(cls):
-        print("hi from %s" % cls.__name__)
+        print(f"hi from {cls.__name__}")
 
     @does_nothingwrapper(1, 2, 3)
 
