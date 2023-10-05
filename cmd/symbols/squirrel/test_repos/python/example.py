@@ -89,6 +89,3 @@ _ = newC1().x
 #        v py.C1.x ref
 #                   v py.C1.x ref
 _ = C1().x + C2().y.x
-
-if False:
-    f(3)  # < "f" py.f ref

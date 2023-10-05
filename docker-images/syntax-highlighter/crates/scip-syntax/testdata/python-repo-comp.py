@@ -59,7 +59,7 @@ class RemoteCollector:
             sent = self.sock.send(buf[totalSent:])
             if sent == 0:
                 raise RuntimeError("socket connection broken")
-            totalSent = totalSent + sent
+            totalSent += sent
 
     # close closes the underlying socket.
     def close(self):
